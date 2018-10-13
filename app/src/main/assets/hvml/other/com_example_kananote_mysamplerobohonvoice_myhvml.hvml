@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<hvml version="2.0">
+  <head>
+    <producer>com.example.kananote.mysamplerobohonvoice</producer>
+    <!-- TODO このシナリオの説明文を入力してください(プログラムに影響はありません) -->
+    <description>ロボホンがお話するhvml</description>
+    <!--sence_commonで登録-->
+    <scene value="com.example.kananote.mysamplerobohonvoice.scene_common"/>
+    <version value="1.0"/>
+    <accost priority="75" topic_id="t1" word="com.example.kananote.mysamplerobohonvoice.myhvml.accost"/>
+  </head>
+  <body>
+  <topic id="t1" listen="false">
+    <action index="1">
+        <!--メモリに登録-->
+      <speech>${memory_p:com.example.kananote.mysamplerobohonvoice.speech}</speech>
+      <behavior id="assign" type="general"/>
+      <control function="myhvml" target="com.example.kananote.mysamplerobohonvoice"/>
+    </action>
+  </topic>
+  </body>
+</hvml>

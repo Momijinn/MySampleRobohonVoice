@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kananote.mysamplerobohonvoice">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="jp.co.sharp.android.permission.VOICEUI" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="jp.co.sharp.android.rb.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <service
+            android:name=".common.RegisterScenarioService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <receiver android:name=".common.RequestScenarioReceiver">
+            <intent-filter>
+                <action android:name="jp.co.sharp.android.voiceui.REQUEST_SCENARIO" />
+            </intent-filter>
+        </receiver>
+
+        <uses-library
+            android:name="jp.co.sharp.android.voiceui.framework"
+            android:required="true" />
+
+    </application>
+
+</manifest>
