@@ -26,7 +26,7 @@
 
 CSVファイルを編集すると，アプリ起動時にCSVファイルを読み込みディスプレイに表示される．
 
-行名はID,NAME,PHRASEにしているが，変更や，行を追加，削除しても良い．
+列名はID,NAME,PHRASEにしているが，変更や，行を追加，削除しても良い．
 しかしその場合は，[MainActivity.java](https://github.com/Momijinn/MySampleRobohonVoice/blob/master/app/src/main/java/com/example/kananote/mysamplerobohonvoice/MainActivity.java)内にある表示するターゲットタグを編集する必要がある．
 ```java
     //ここを編集
