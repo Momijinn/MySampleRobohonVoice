@@ -104,7 +104,7 @@ public class MainActivity extends Activity implements MainActivityVoiceUIListene
                 }
 
                 int ret = VoiceUIManager.VOICEUI_ERROR;
-                ret = VoiceUIVariableUtil.setVariableData(mVoiceUIManager, ScenarioDefinitions.MUSIC_OVERVIEW,  talk);
+                ret = VoiceUIVariableUtil.setVariableData(mVoiceUIManager, ScenarioDefinitions.MY_SPEECH,  talk);
 
                 if(ret == VoiceUIManager.VOICEUI_ERROR){
                     Log.d(TAG, "setVariableData:VARIABLE_REGISTER_FAILED");

@@ -57,7 +57,7 @@ public class ScenarioDefinitions {
      * my発話
      */
     public static final String ACC_ACCOST =  ScenarioDefinitions.PACKAGE + ".myhvml.accost";
-    public static final String MUSIC_OVERVIEW = ScenarioDefinitions.TAG_MEMORY_PERMANENT + ScenarioDefinitions.PACKAGE + ".speech";
+    public static final String MY_SPEECH = ScenarioDefinitions.TAG_MEMORY_PERMANENT + ScenarioDefinitions.PACKAGE + ".speech";
 
 
     /**
